@@ -1,0 +1,99 @@
+
+@font-face {
+   font-family: 'Ambarella';
+   src: url('assets/fonts/Ambarella.eot') format('embedded-opentype');
+   font-weight: normal;
+   font-style: normal;
+ }
+ 
+ @font-face {
+   font-family: 'Ambarella';
+   src:  url('assets/fonts/Ambarella.otf')  format('opentype'),
+          url('assets/fonts/Ambarella.ttf')  format('truetype'), 
+          url('assets/fonts/Ambarella.svg#Ambarella') format('svg');
+ }
+ 
+ .heading-primary {
+     font-size:3.6rem;
+     color:$primary-blue;
+     margin-bottom: 6rem;
+
+     @include respond(lt) {
+       font-size:3rem;
+     }
+
+     @include respond(phone) {
+       font-size:2.5rem
+     }
+ }
+
+ .test-font {
+   font-family: 'Ambarella';
+ }
+
+ .welcome-titles {
+    position:relative;
+    height:11rem;
+    width:100%;
+
+    @include respond(dt-sm) {
+      height:9rem;
+    }
+
+    @include respond(tab) {
+      height:7rem
+    }
+
+    @include respond(phone) {
+      height:6rem
+    }
+
+    .heading-bg {
+      font-family: 'Ambarella';
+      font-size: 11rem;
+      color: rgba(161, 186, 182, 0.16);
+      margin: 0;
+      padding: 0;
+      position: absolute;
+      text-align: center;
+      z-index: 1;
+      left: 50%;
+      transform: translateX(-50%);
+      width:100%;
+
+      @include respond(dt-sm) {
+        font-size:9rem;
+      }
+ 
+      @include respond(tab) {
+        font-size:7rem
+      }
+ 
+      @include respond(phone) {
+        font-size:6rem
+      }
+    }
+
+    .heading-primary {
+      position: absolute;
+      text-align: center;
+      margin: 0;
+      padding: 0;
+      z-index: 10;
+      left: 50%;
+      bottom: 20%;
+      transform: translateX(-50%);
+      width:100%;
+    }
+ }
+
+ .heading-bg {
+    padding-bottom:1rem;
+    width:100%;
+ }
+
+ .paragraph, p {
+     font-size:1.8rem;
+     color:$mid-grey-1;
+     line-height: $line-height--big;
+ }
