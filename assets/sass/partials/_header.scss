@@ -1,6 +1,7 @@
 /* Site Header
 ---------------------------------------------- */
 
+
 .before-header {
 	background:$primary-blue;
 	color:#fff;
@@ -12,18 +13,42 @@
 		justify-content: space-between;
 		max-width:1280px;
 		margin:0 auto;
+
+		@include respond(lt-lg) {
+			overflow:hidden;
+		}
+
+		@include respond(tab) {
+			display:none;
+		}
+	}
+
+	.block {
+
+		@include respond(lt-lg) {
+			margin: 0 15px;
+		}
 	}
 	
 	p {
 		color:#fff;
 		margin:0;
 		font-size:2rem;
+
+		@include respond(lt) {
+			line-height: 125%;
+			font-size:1.5rem;
+		}
 	}
 
 	ul {
 		display: flex;
 		align-items: center;
 		justify-content: flex-end;
+
+		@include respond(lt-lg) {
+			line-height: 125%;
+		}
 		
 		li {
 			
@@ -35,6 +60,14 @@
 			font-size:1.7rem;
 			text-decoration: none;
 			display:block;
+
+			@include respond(lt-lg) {
+				font-size:1.5rem;
+			}
+
+			@include respond(tab) {
+				font-size:1.4rem;
+			}
 
 			&:hover {
 				color:$primary-orange;
@@ -48,6 +81,14 @@
 				text-shadow: none;
 				box-shadow: none;
 
+				@include respond(lt-lg) {
+					font-size:1.5rem;
+				}
+
+				@include respond(tab) {
+					font-size:1.4rem;
+				}
+
 				&:hover  {
 					color:#fff;
 				}
@@ -60,7 +101,11 @@
 		
 		.email a {
 			padding:15px;
-			font-size:0.9em;
+			font-size:1.5;
+
+			@include respond(tab) {
+				font-size:1.4rem;
+			}
 			
 			&:hover  {
 				color:#fff;

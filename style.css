@@ -1812,14 +1812,30 @@ img.alignright,
     justify-content: space-between;
     max-width: 1280px;
     margin: 0 auto; }
+    @media only screen and (max-width: 80em) {
+      .before-header .wrap {
+        overflow: hidden; } }
+    @media only screen and (max-width: 56.25em) {
+      .before-header .wrap {
+        display: none; } }
+  @media only screen and (max-width: 80em) {
+    .before-header .block {
+      margin: 0 15px; } }
   .before-header p {
     color: #fff;
     margin: 0;
     font-size: 2rem; }
+    @media only screen and (max-width: 66.25em) {
+      .before-header p {
+        line-height: 125%;
+        font-size: 1.5rem; } }
   .before-header ul {
     display: flex;
     align-items: center;
     justify-content: flex-end; }
+    @media only screen and (max-width: 80em) {
+      .before-header ul {
+        line-height: 125%; } }
     .before-header ul li a {
       color: #fff;
       padding: 15px;
@@ -1828,6 +1844,12 @@ img.alignright,
       font-size: 1.7rem;
       text-decoration: none;
       display: block; }
+      @media only screen and (max-width: 80em) {
+        .before-header ul li a {
+          font-size: 1.5rem; } }
+      @media only screen and (max-width: 56.25em) {
+        .before-header ul li a {
+          font-size: 1.4rem; } }
       .before-header ul li a:hover {
         color: #faa433; }
       .before-header ul li a.button {
@@ -1837,13 +1859,22 @@ img.alignright,
         color: #fff;
         text-shadow: none;
         box-shadow: none; }
+        @media only screen and (max-width: 80em) {
+          .before-header ul li a.button {
+            font-size: 1.5rem; } }
+        @media only screen and (max-width: 56.25em) {
+          .before-header ul li a.button {
+            font-size: 1.4rem; } }
         .before-header ul li a.button:hover {
           color: #fff; }
       .before-header ul li a svg {
         display: inline-block; }
     .before-header ul li .email a {
       padding: 15px;
-      font-size: 0.9em; }
+      font-size: 1.5; }
+      @media only screen and (max-width: 56.25em) {
+        .before-header ul li .email a {
+          font-size: 1.4rem; } }
       .before-header ul li .email a:hover {
         color: #fff; }
 
@@ -2546,6 +2577,13 @@ img.alignright,
     background-color: #FFF;
     cursor: pointer;
     min-height: 500px; }
+    @media only screen and (max-width: 66.25em) {
+      .skill-card__card {
+        width: 50%; } }
+    @media only screen and (max-width: 47.5em) {
+      .skill-card__card {
+        width: 100%;
+        min-height: 390px; } }
     .skill-card__card:active svg,
     .skill-card__card:active h3,
     .skill-card__card:focus svg,
@@ -2554,6 +2592,9 @@ img.alignright,
     .skill-card__card:hover .skill-card__header button {
       -webkit-animation: cardBtn 1s ease forwards;
       animation: cardBtn 1s ease forwards; }
+    @media only screen and (max-width: 56.25em) {
+      .skill-card__card.hover {
+        background: #f9f9f9; } }
     .skill-card__card.active {
       background: #f9f9f9; }
       .skill-card__card.active .skill-card__header {
@@ -2572,11 +2613,24 @@ img.alignright,
       .skill-card__card.active .skill-card__header svg {
         width: 20%;
         top: 40%; }
+        @media only screen and (max-width: 56.25em) {
+          .skill-card__card.active .skill-card__header svg {
+            width: 10%; } }
       .skill-card__card.active .skill-card__header h3 {
         font-size: 1.5rem;
         top: 80%; }
+        @media only screen and (max-width: 56.25em) {
+          .skill-card__card.active .skill-card__header h3 {
+            font-size: 75%;
+            top: 65%; } }
+      @media only screen and (max-width: 56.25em) {
+        .skill-card__card.active .skill-card__header p {
+          margin-bottom: 10px; } }
       .skill-card__card.active .skill-card__body {
         height: 310px; }
+        @media only screen and (max-width: 56.25em) {
+          .skill-card__card.active .skill-card__body {
+            height: 250px; } }
       .skill-card__card.active .skill-card__body .skill-card__duration a.button {
         transform: translateY(0%); }
       .skill-card__card.active .skill-card__body .skill-card__knowledge p {
@@ -2589,6 +2643,9 @@ img.alignright,
     margin: -20px -20px 20px -20px;
     transition: all 0.3s ease;
     overflow: hidden; }
+    @media only screen and (max-width: 56.25em) {
+      .skill-card__header {
+        height: 80%; } }
     .skill-card__header svg {
       width: 30%;
       transition: all 0.3s ease-in-out;
@@ -2613,6 +2670,22 @@ img.alignright,
       font-weight: normal;
       font-size: 1.9em;
       margin: 0; }
+      @media only screen and (max-width: 80em) {
+        .skill-card__header h3 {
+          font-size: 1em; } }
+      @media only screen and (max-width: 90em) {
+        .skill-card__header h3 {
+          font-size: 1.4rem; } }
+      @media only screen and (max-width: 66.25em) {
+        .skill-card__header h3 {
+          font-size: 1.2rem;
+          top: 70%; } }
+      @media only screen and (max-width: 56.25em) {
+        .skill-card__header h3 {
+          font-size: 1.1rem; } }
+      @media only screen and (max-width: 47.5em) {
+        .skill-card__header h3 {
+          top: 90%; } }
       .skill-card__header h3 span {
         font-weight: bold; }
     .skill-card__header button {

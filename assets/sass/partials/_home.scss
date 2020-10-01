@@ -183,6 +183,16 @@
         cursor: pointer;
         min-height:500px;
 
+        @include respond(lt) {
+            width: 50%;
+        }
+
+        @include respond(phone) {
+            width: 100%;
+            min-height:390px;
+        }
+    
+
         &:active svg,
         &:active h3,
         &:focus svg,
@@ -193,6 +203,13 @@
         &:hover .skill-card__header button {
             -webkit-animation: cardBtn 1s ease forwards;
             animation: cardBtn 1s ease forwards;
+        }
+
+        &.hover {
+
+            @include respond(tab) {
+                background:#f9f9f9;
+            }
         }
 
         &.active {
@@ -224,15 +241,35 @@
             .skill-card__header svg {
                 width:20%;
                 top:40%;
+                
+                @include respond(tab) {
+                    width:10%;
+                }
             }
             
             .skill-card__header h3 {
                 font-size:1.5rem;
                 top:80%;
+                
+                @include respond(tab) {
+                    font-size:75%;
+                    top:65%;
+                }
+            }
+
+            .skill-card__header p {
+
+                @include respond(tab) {
+                    margin-bottom:10px;
+                }
             }
 
             .skill-card__body {
                 height:310px;
+
+                @include respond(tab) {
+                    height: 250px;
+                }
             }
 
             .skill-card__body .skill-card__duration a.button {
@@ -253,6 +290,10 @@
         margin: -20px -20px 20px -20px;
         transition: all 0.3s ease;
         overflow: hidden;
+
+        @include respond(tab) {
+            height: 80%;
+        }
         
         svg {
             width:30%;
@@ -281,6 +322,31 @@
             font-size:1.9em;
             margin:0;   
 
+            @include respond(dt-md) {
+                font-size:1em;
+            }
+
+            @include respond(dt-sm) {
+                font-size:1.4rem;
+            }
+
+            @include respond(lt-lrg) {
+                font-size:1.3rem;
+            }
+
+            @include respond(lt) {
+                font-size:1.2rem;
+                top: 70%;
+            }
+
+            @include respond(tab) {  
+                font-size: 1.1rem;
+            }
+
+            @include respond(phone) {
+                top: 90%;
+            }
+ 
             span {
                 font-weight: bold;
             }

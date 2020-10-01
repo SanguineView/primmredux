@@ -70,7 +70,7 @@
     height:11rem;
     width:100%;
 
-    @include respond(dt-sm) {
+    @include respond(lt-lg) {
       height:9rem;
     }
 
@@ -95,7 +95,7 @@
       transform: translateX(-50%);
       width:100%;
 
-      @include respond(dt-sm) {
+      @include respond(lt-lg) {
         font-size:9rem;
       }
  
