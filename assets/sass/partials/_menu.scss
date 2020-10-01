@@ -302,9 +302,34 @@
 
 	.genesis-nav-menu a {
 
+		color:$light-black;
+		font-size:1.8rem;
+
 		@media only screen and (min-width: $standard-screen-width) {
 			padding-right: 15px;
 			padding-left: 15px;
+		}
+
+		&:hover {
+			color:$primary-blue;
+		}
+	}
+
+	.nav-action a {
+		background-color: $primary-orange;
+		border: 1px solid $primary-orange;
+		color: #fff;
+		cursor: pointer;
+		font-size:1.6rem;
+		font-weight: 600;
+		padding: 1.5rem;
+		text-decoration: none;
+		white-space: normal;
+		width: auto;
+		color: #fff !important;
+
+		&:hover {
+			background-color:$secondary-orange;
 		}
 	}
 }

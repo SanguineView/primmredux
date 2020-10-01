@@ -51,6 +51,9 @@ a:hover {
 p {
 	margin: 0 0 30px;
 	padding: 0;
+	color:$secondary-black;
+	line-height:150%;
+	font-size:2rem;
 }
 
 ol,
@@ -111,10 +114,10 @@ h3,
 h4,
 h5,
 h6 {
-	margin: 0 0 20px;
 	font-family: $headings--font-family;
 	font-weight: $font-weight--regular;
 	line-height: $line-height--small;
+	color:$secondary-black;
 }
 
 h1 {
@@ -272,11 +275,11 @@ input[type="radio"] {
 
 ::-moz-placeholder {
 	opacity: 1;
-	color: $dark-grey;
+	color: $primary-grey;
 }
 
 ::-webkit-input-placeholder {
-	color: $dark-grey;
+	color: $primary-grey;
 }
 
 button {

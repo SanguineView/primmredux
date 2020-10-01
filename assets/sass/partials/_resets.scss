@@ -202,8 +202,7 @@ html {
 .site-footer:before,
 .site-header:before,
 .site-inner:before,
-.widget:before,
-.wrap:before {
+.widget:before {
 	display: table;
 	content: " ";
 }
@@ -220,8 +219,7 @@ html {
 .site-footer:after,
 .site-header:after,
 .site-inner:after,
-.widget:after,
-.wrap:after {
+.widget:after {
 	display: table;
 	clear: both;
 	content: " ";

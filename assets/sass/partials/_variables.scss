@@ -1,17 +1,18 @@
 // Base Colors
 $black: #000;
-$primary-blue: #447478;
-$secondary-blue: #a1bab6;
-$gold: #c9a45d;
+$secondary-black:#1b1b1b;
+$light-black:#333;
 $white: #fff;
-$light-grey-1: #ddd;
-$light-grey-2: #eee;
-$light-grey-3: #f5f5f5;
-$mid-grey-1: #7e7e7e;
-$dark-grey-1: #333;
+$primary-blue: #1277af;
+$secondary-blue: #2eacdf;
+$tertiary-blue:#9BACBD;
+$primary-orange:#faa433;
+$secondary-orange:#ffba60;
+$primary-grey: #333;
+$secondary-grey:#f9f9f9;
 
 // Base Fonts
-$base-font: "Lora", sans-serif;
+$base-font: "Lato", sans-serif;
 
 // Screen widths, Media queries - WC widths in WC variables
 $standard-screen-width: 960px;
@@ -20,7 +21,7 @@ $wrap-width:1032px;
 // Border styles
 $border-width: 1px;
 $border-style: solid;
-$border-color: $light-grey-1;
+$border-color: $primary-grey;
 
 // Box Shadow
 $box-shadow-blur-radius: 20px;
@@ -73,47 +74,47 @@ $line-height--small: 1.2;
 $line-height--smaller: 1;
 
 // Font colors
-$body--font-color: $dark-grey-1;
-$link--font-color: $primary-blue;
-$link--font-color-hover: $dark-grey-1;
+$body--font-color: $primary-grey;
+$link--font-color: $primary-orange;
+$link--font-color-hover: $secondary-orange;
 $button--font-color: $white;
 $button--font-color-hover: $white;
-$entry-title__link--font-color: $dark-grey-1;
-$entry-title__link--font-color-hover: $primary-blue;
-$site-title__link--font-color: $dark-grey-1;
-$genesis-nav-menu--font-color: $dark-grey-1;
-$genesis-nav-menu--font-color-hover: $primary-blue;
-$menu-toggle--font-color: $dark-grey-1;
-$menu-toggle--font-color-hover: $primary-blue;
-$sub-menu-toggle--font-color: $dark-grey-1;
-$sub-menu-toggle--font-color-hover: $primary-blue;
+$entry-title__link--font-color: $primary-orange;
+$entry-title__link--font-color-hover: $secondary-orange;
+$site-title__link--font-color: $primary-orange;
+$genesis-nav-menu--font-color: $primary-orange;
+$genesis-nav-menu--font-color-hover: $secondary-orange;
+$menu-toggle--font-color: $primary-orange;
+$menu-toggle--font-color-hover: $secondary-orange;
+$sub-menu-toggle--font-color: $primary-orange;
+$sub-menu-toggle--font-color-hover: $secondary-orange;
 $menu-highlight__link--font-color: $white;
-$sidebar__widget-title--font-color: $dark-grey-1;
-$forms--font-color: $dark-grey-1;
-$archive-pagination--font-color: $dark-grey-1;
+$sidebar__widget-title--font-color: $primary-orange;
+$forms--font-color: $primary-orange;
+$archive-pagination--font-color: $primary-orange;
 $archive-pagination--font-color-hover: $white;
-$gs-faq__question--font-color: $dark-grey-1;
-$gs-faq__question--font-color-hover: $primary-blue;
-$disabled--font-color: $mid-grey-1;
+$gs-faq__question--font-color: $primary-orange;
+$gs-faq__question--font-color-hover: $secondary-orange;
+$disabled--font-color: $primary-orange;
 
 // Background colors
 $body--background-color: $white;
 $site-header--background-color: $white;
-$mark--background-color: $light-grey-1;
-$button--background-color: $dark-grey-1;
+$mark--background-color: $primary-grey;
+$button--background-color: $primary-grey;
 $button--background-color-hover: $primary-blue;
 $genesis-nav-menu__sub-menu__link--background-color: $white;
 $footer-widgets--background-color: $white;
-$menu-highlight__link--background-color: $dark-grey-1;
+$menu-highlight__link--background-color: $primary-grey;
 $menu-highlight__link--background-color-hover: $primary-blue;
 $forms__background-color: $white;
-$sticky--background-color: $light-grey-1;
-$author-box--background-color: $light-grey-1;
-$code--background-color: $light-grey-1;
-$archive-pagination--background-color: $light-grey-1;
-$archive-pagination--background-color-hover: $dark-grey-1;
-$enews__sidebar--background-color: $light-grey-1;
-$disabled--background-color: $light-grey-1;
+$sticky--background-color: $primary-grey;
+$author-box--background-color: $primary-grey;
+$code--background-color: $primary-grey;
+$archive-pagination--background-color: $primary-grey;
+$archive-pagination--background-color-hover: $primary-grey;
+$enews__sidebar--background-color: $primary-grey;
+$disabled--background-color: $primary-grey;
 
 // MEDIA QUERY MANAGER
 @mixin respond($breakpoint) {

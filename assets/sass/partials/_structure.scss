@@ -53,13 +53,6 @@
 
 .site-inner {
 	clear: both;
-	margin: 0 auto;
-	padding: 60px 30px 0;
-
-	@media only screen and (min-width: $standard-screen-width) {
-		max-width: 1140px;
-		margin-top: 70px;
-	}
 }
 
 /* Content
@@ -67,27 +60,15 @@
 
 .content {
 
-	@media only screen and (min-width: $standard-screen-width) {
-		float: left;
-		width: 65%;
-	}
 }
 
 .sidebar-content .content {
 
-	@media only screen and (min-width: $standard-screen-width) {
-		float: right;
-	}
 }
 
 .full-width-content .content,
 .landing-page .content {
 
-	@media only screen and (min-width: $standard-screen-width) {
-		float: none;
-		margin-right: auto;
-		margin-left: auto;
-	}
 }
 
 @media only screen and (min-width: $standard-screen-width) {

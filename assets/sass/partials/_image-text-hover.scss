@@ -147,7 +147,7 @@
 		}
 
 		h3 {
-			color:$gold;
+			color:$primary-blue;
 			font-size:2.4rem;
 			text-align:left;
 			text-transform:none;
@@ -156,13 +156,13 @@
 		p {
 			font-size:1.4rem;
 			line-height:125%;
-			color:$mid-grey-1;
+			color:$primary-grey;
 			text-align:left;
 			margin-bottom:0;
 
 			&.read {
-				border-top:1px solid $gold;
-				color:$gold;
+				border-top:1px solid $primary-blue;
+				color:$primary-blue;
 				font-size:1.2rem;
 				text-transform: uppercase;
 				margin-top:auto;

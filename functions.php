@@ -198,4 +198,129 @@ function genesis_sample_comments_gravatar( $args ) {
 	$args['avatar_size'] = 60;
 	return $args;
 
+
+
 }
+
+add_action( 'wp_enqueue_scripts', 'tpc_scripts_styles', 20 );
+
+function tpc_scripts_styles() {
+
+	wp_enqueue_style( 'tpc-animisition-css', get_stylesheet_directory_uri() . '/assets/css/animsition.min.css', array()  );
+	wp_enqueue_style( 'tpc-nav-style', get_stylesheet_directory_uri() . '/assets/css/nav-style.css', array()  );
+
+	// Enqueue theme scripts.
+	wp_enqueue_script( 'tpc-overlay-js', get_stylesheet_directory_uri() . '/assets/js/classie.js', array( 'jquery' ), true );
+	wp_enqueue_script( 'tpc-overlay-js-two', get_stylesheet_directory_uri() . '/assets/js/overlay-push.js', array( 'jquery' ), true );
+	wp_enqueue_script( 'tpc-nav-respond', get_stylesheet_directory_uri() . '/assets/js/nav-main.js', array( 'jquery' ), true );
+
+	}
+
+// Add div.wrap inside of div#inner for page load transition
+function tpc_before_header_items() {
+	?>
+		<section class="before-header">
+			<div class="wrap">
+				<div class="block w-40">
+					<p>Welcome to Primm Advertising</p>
+				</div>
+				<div class="block w-60">
+					<ul>
+						<li class="email"><a href="mailto:info@primmco.com">info@primmco.com</a></li>
+						<li><a href="https://www.facebook.com/PrimmAdvertising/"><i class="icon ion-social-facebook"></i></a></li>
+						<li><a href="https://twitter.com/primmco"><i class="icon ion-social-twitter"></i></a></li>
+						<li><a href="https://www.instagram.com/primmadvertising/"><i class="icon ion-social-instagram"></i></a></li>
+						<li><a href="https://www.youtube.com/user/Primmco/feed"><i class="icon ion-social-youtube"></i></a></li>
+						<li><a href="http://www.linkedin.com/company/the-primm-company"><i class="icon ion-social-linkedin"></i></a></li>
+						<li><a href="tel:17576236234" class="button"><ion-icon name="call"></ion-icon>1 (757) 623-6234</a></li>
+					</ul>
+				</div>
+			</div>
+		</section>
+	<?php
+}
+add_action( 'genesis_before_header', 'tpc_before_header_items', 20 );
+
+remove_action('genesis_footer', 'genesis_do_footer');
+remove_action('genesis_footer', 'genesis_footer_markup_open', 5);
+remove_action('genesis_footer', 'genesis_footer_markup_close', 15);
+
+//Site Footer Nav
+add_action('genesis_after_footer', 'tpc_footer');
+function tpc_footer() {
+	?>
+	<footer class="site-footer-two">
+		<div class="site-footer-two__container">
+			<a href="https://theprimmcompany.com" class="brand footer-brand"><img src="<?php echo get_home_url(); ?>/wp-content/uploads/2018/09/logo.png" /></a>
+			<ul class="site-footer-two__social-links">
+					<li><a href="https://www.facebook.com/PrimmAdvertising/"><i class="icon ion-social-facebook"></i></a></li>
+					<li><a href="https://twitter.com/primmco"><i class="icon ion-social-twitter"></i></a></li>
+					<li><a href="https://www.instagram.com/primmadvertising/"><i class="icon ion-social-instagram"></i></a></li>
+					<li><a href="https://www.youtube.com/user/Primmco/feed"><i class="icon ion-social-youtube"></i></a></li>
+					<li><a href="http://www.linkedin.com/company/the-primm-company"><i class="icon ion-social-linkedin"></i></a></li>
+			</ul>
+			<div class="site-footer-two__copyright">&copy; <?php echo date('Y'); ?> Primm Advertising</div>
+			<ul class="site-footer-two__text-links" id="menu-primary-navigation">
+				<li class="who-we-are">
+					<a href="<?php echo get_home_url(); ?>/who-we-are/" itemprop="url" class="animsition-link"><span itemprop="name">Who We Are</span></a>
+				</li>
+				<li class="digital">
+					<a href="<?php echo get_home_url(); ?>/online-advertising/" itemprop="url" class="animsition-link"><span itemprop="name">Digital</span></a>
+				</li>
+				<li class="web">
+					<a href="<?php echo get_home_url(); ?>/web-design/" itemprop="url" class="animsition-link"><span itemprop="name">Web</span></a>
+				</li>
+				<li class="video">
+					<a href="<?php echo get_home_url(); ?>/video-production/" itemprop="url" class="animsition-link"><span itemprop="name">Video</span></a>
+				</li>
+				<li class="print">
+					<a href="<?php echo get_home_url(); ?>/print/" itemprop="url" class="animsition-link"><span itemprop="name">Print</span></a>
+				</li>
+				<li class="broadcast">
+					<a href="<?php echo get_home_url(); ?>/media-planning/" itemprop="url" class="animsition-link"><span itemprop="name">Media</span></a>
+				</li>
+				<li class="social">
+					<a href="<?php echo get_home_url(); ?>/seo/" itemprop="url" class="animsition-link"><span itemprop="name">SEO</span></a>
+				</li>
+				<li class="social">
+					<a href="<?php echo get_home_url(); ?>/our-work/" itemprop="url" class="animsition-link"><span itemprop="name">Our Work</span></a>
+				</li>
+				<li class="contact">
+					<a href="<?php echo get_home_url(); ?>/contact/" itemprop="url" class="animsition-link"><span itemprop="name">Contact</span></a>
+				</li>
+			</ul>
+		</div>
+	</footer>
+	<?php
+
+}
+
+// Add Google Tag Manager code in <head>
+add_action( 'wp_head', 'pd_google_tag_manager1' );
+function pd_google_tag_manager1() { ?>
+	<!-- Google Tag Manager -->
+	<script>(function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':
+	new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0],
+	j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
+	'https://www.googletagmanager.com/gtm.js?id='+i+dl;f.parentNode.insertBefore(j,f);
+	})(window,document,'script','dataLayer','GTM-NVNR3B2');</script>
+	<!-- End Google Tag Manager -->
+	<!-- Global site tag (gtag.js) - Google Analytics -->
+	<script async src="https://www.googletagmanager.com/gtag/js?id=UA-8390030-1"></script>
+	<script>
+	  window.dataLayer = window.dataLayer || [];
+	  function gtag(){dataLayer.push(arguments);}
+	  gtag('js', new Date());
+
+	  gtag('config', 'UA-8390030-1');
+	</script>
+<?php }
+
+// Add Google Tag Manager code immediately below opening <body> tag
+add_action( 'genesis_before', 'pd_google_tag_manager2' );
+function pd_google_tag_manager2() { ?>
+	<!-- Google Tag Manager (noscript) -->
+	<noscript><iframe src="https://www.googletagmanager.com/ns.html?id=GTM-NVNR3B2"
+	height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
+	<!-- End Google Tag Manager (noscript) -->
+<?php }
