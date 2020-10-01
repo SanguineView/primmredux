@@ -34,7 +34,7 @@ function our_loop() {
     <section class="emergency-message">
       <div class="wrap">
         <h3>Covid-19 Update - We’d Like to Lend a Helping Hand &nbsp;</h3>
-        <a href="https://theprimmcompany.com/what-your-customers-need-to-hear-from-you/" class="button white">View Update</a>
+        <a href="<?php echo get_site_url(); ?>/what-your-customers-need-to-hear-from-you/" class="button white">View Update</a>
       </div>
     </section>
 
