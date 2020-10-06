@@ -43,6 +43,14 @@
         margin:20px 1%;
         width:14%;
 
+        @include respond(lt) {
+            width: 23%;
+        }
+
+        @include respond(phone) {
+            width: 31%;
+        }
+
         img {
             display: block;
             margin: 10px auto;
@@ -70,6 +78,14 @@
     &__item {
         margin:20px 1%;
         width:20%;
+
+        @include respond(lt-lg) {
+            width:30%;
+        }
+
+        @include respond(phone) {
+            width:47%;
+        }
 
         img {
             display: block;

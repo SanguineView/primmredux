@@ -750,6 +750,12 @@ function our_loop() {
       <div class="wrap">
           <div class="partners__container">
             <div class="partners__item">
+                <img class="lazy" data-src="<?php echo get_site_url(); ?>/wp-content/uploads/2020/08/COVABIZ-BOB-AWARD-LOGO-003.jpg">
+            </div>
+            <div class="partners__item">
+              <a href="https://www.expertise.com/va/norfolk/advertising-agencies" style="display:inline-block; border:0;"><img style="width:200px; display:block;" src="//cdn.expertise.com/awards/va_norfolk_advertising-agencies_2020_transparent.svg" alt="Best Advertising Agencies in Norfolk" /></a>
+            </div>
+            <div class="partners__item">
                 <img class="lazy" data-src="<?php echo get_site_url(); ?>/wp-content/uploads/2019/12/google-partner.png">
             </div>
             <div class="partners__item">
