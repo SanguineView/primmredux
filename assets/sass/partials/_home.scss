@@ -474,6 +474,143 @@
   
 }
 
+.lets-talk {
+
+    .button {
+        background:none;
+        color:#fff;
+        transition: all 0.3s ease;
+        font-size:1.6rem;
+        border:1px solid #fff;
+
+        &:hover {
+            background:#fff;
+            color:$secondary-orange;
+        }
+    }
+}
+
+/* MAC DEVICE BG */
+
+
+.device,
+.device::before,
+.device::after,
+.device *,
+.device *::before,
+.device *::after {
+  box-sizing: border-box;
+  display: block;
+}
+
+.device {
+  position: relative;
+  transform: scale(1);
+  z-index: 1;
+  
+  .device-frame {
+    z-index: 1;
+  }
+  
+  .device-content {
+    background-color: #fff;
+    background-position: center center;
+    background-size: cover;
+    object-fit: cover;
+    position: relative;
+  }
+
+  &-imac-pro {
+    max-height: 551px;
+    max-width: 764px;
+    margin: 0 auto;
+
+    .device-content {
+        border: 2px solid #121212;
+        border-radius: 2px;
+        height: 397px;
+        max-width: 716px;
+    }
+
+    .device-power {
+        max-width: 130px;
+        margin: 0 auto;
+        background: linear-gradient(0deg,rgb(141, 142, 147) 0%, rgb(191, 192, 194) 43%, rgb(233, 234, 235) 59%,
+        rgb(207, 208, 211) 100%);
+        overflow: visible;
+        clip-path: polygon(20% 0%, 80% 0%, 100% 100%, 0% 100%);
+
+        &::after,
+        &::before {
+          content: "";
+        }
+
+        &::after {
+            background: linear-gradient(90deg, rgb(149, 151, 155) 0%,
+            rgb(210, 211, 213) 100%);
+            border-radius: 2px;
+            height: 6px;
+            margin: 0 auto;
+            position: relative;
+            max-width: 180px;
+            left: 50%;
+            transform: translateX(-50%);
+        }
+
+        &::before {
+            border-image: linear-gradient(0deg, rgb(141, 142, 147) 0%, rgb(191, 192, 194) 43%, rgb(233, 234, 235) 59%,
+            rgb(207, 208, 211) 100%);
+            border-width: 0 8px 46px 8px;
+            height: 50px;
+            margin: 0 auto;
+            position: relative;
+            max-width: 130px;
+            border-style: solid;
+          }
+    }
+  .device-frame {
+    background: #0d0d0d;
+    border-radius: 18px;
+    box-shadow: inset 0 0 0 2px #080808;
+    max-height: 493px;
+    padding: 24px 24px 80px 24px;
+    position: relative;
+    max-width: 764px;
+
+    &::after {
+        background: rgb(149,151,155);
+        background: -moz-linear-gradient(90deg, rgba(149,151,155,1) 0%, rgba(210,211,213,1) 100%);
+        background: -webkit-linear-gradient(90deg, rgba(149,151,155,1) 0%, rgba(210,211,213,1) 100%);
+        background: linear-gradient(90deg, rgba(149,151,155,1) 0%, rgba(210,211,213,1) 100%);
+        filter: progid:DXImageTransform.Microsoft.gradient(startColorstr="#95979b",endColorstr="#d2d3d5",GradientType=1);
+        border-radius: 0 0 18px 18px;
+        bottom: 0px;
+        content: "";
+        height: 50px;
+        left: 0px;
+        position: absolute;
+        max-width: 764px;
+        width:100%;
+    }
+
+    &::before {
+        bottom: 15px;
+        color: #0d0d0d;
+        content: "";
+        font-size: 24px;
+        height: 24px;
+        left: 50%;
+        line-height: 24px;
+        margin-left: -100px;
+        position: absolute;
+        text-align: center;
+        max-width: 200px;
+        z-index: 9;
+      }
+  }
+}   
+}
+
 /******** HOME CASE STUDIES *******/
 /* ===== general ===== */
 .case-study-grid,
@@ -999,6 +1136,8 @@ background:#000;
 color:#fff;
 border:1px solid #000;
 cursor: pointer;
+text-transform:uppercase;
+font-size:1.6rem;
 }
 
 .case-study-panel-collapse .head .button:hover {

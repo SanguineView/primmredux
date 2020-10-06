@@ -746,25 +746,25 @@ function our_loop() {
 
     <?php // SECTION - ?>
 
-<section class="partners">
-  <div class="wrap">
-      <div class="partners__container">
-        <div class="partners__item">
-            <img class="lazy" data-src="<?php echo get_site_url(); ?>/wp-content/uploads/2019/12/google-partner.png">
-        </div>
-        <div class="partners__item">
-            <img class="lazy" data-src="<?php echo get_site_url(); ?>/wp-content/uploads/2019/12/liquid-web.png">
-        </div>
-        <div class="partners__item">
-            <img class="lazy" data-src="<?php echo get_site_url(); ?>/wp-content/uploads/2019/12/agency-spotter.png">
-        </div>
-        <div class="partners__item">
-            <img class="lazy" data-src="https://www.alignable.com/assets/badge/alignable-r3.png">
-        </div>
+    <section class="partners">
+      <div class="wrap">
+          <div class="partners__container">
+            <div class="partners__item">
+                <img class="lazy" data-src="<?php echo get_site_url(); ?>/wp-content/uploads/2019/12/google-partner.png">
+            </div>
+            <div class="partners__item">
+                <img class="lazy" data-src="<?php echo get_site_url(); ?>/wp-content/uploads/2019/12/liquid-web.png">
+            </div>
+            <div class="partners__item">
+                <img class="lazy" data-src="<?php echo get_site_url(); ?>/wp-content/uploads/2019/12/agency-spotter.png">
+            </div>
+            <div class="partners__item">
+                <img class="lazy" data-src="https://www.alignable.com/assets/badge/alignable-r3.png">
+            </div>
+          </div>
       </div>
-  </div>
-</section>
-    
+    </section>
+        
 
     <script type="text/javascript">
 
