@@ -3821,6 +3821,8 @@ img.alignright,
         padding-left: 2rem; } }
   .contentSection--blueGradient {
     background: linear-gradient(to right, #2eaee3 0%, #0275b1 100%); }
+  .contentSection--grey {
+    background: #F6F9FC; }
   .contentSection--flexColumn {
     display: flex;
     flex-direction: column;
