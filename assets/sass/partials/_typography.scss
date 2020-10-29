@@ -14,15 +14,36 @@
  }
  
  .heading-primary {
-     font-size:8rem;
+      color:$primary-blue;
+      font-size:4.25rem;
+      font-weight:300;
+      line-height:100%;
+      text-transform: uppercase;
+      margin:0 0 2rem;
 
-     @include respond(lt) {
-       font-size:3rem;
-     }
+      span {
+        font-weight:bold;
+      }
 
-     @include respond(phone) {
-       font-size:2.5rem
-     }
+      @include respond(lt) {
+        font-size:3rem;
+      }
+
+      @include respond(tab) {
+        font-size:2.25rem
+      }
+
+      @include respond(phone) {
+        font-size:2.15rem
+      }
+
+      &--center {
+        text-align:center;
+      }
+
+      &--white {
+        color:#fff;
+      }
  }
  
  .heading-secondary {
@@ -65,69 +86,18 @@
    font-family: 'Lato';
  }
 
- .welcome-titles {
-    position:relative;
-    height:11rem;
-    width:100%;
-
-    @include respond(lt-lg) {
-      height:9rem;
-    }
-
-    @include respond(tab) {
-      height:7rem
-    }
-
-    @include respond(phone) {
-      height:6rem
-    }
-
-    .heading-bg {
-      font-family: 'Lato';
-      font-size: 11rem;
-      color: rgba(161, 186, 182, 0.16);
-      margin: 0;
-      padding: 0;
-      position: absolute;
-      text-align: center;
-      z-index: 1;
-      left: 50%;
-      transform: translateX(-50%);
-      width:100%;
-
-      @include respond(lt-lg) {
-        font-size:9rem;
-      }
- 
-      @include respond(tab) {
-        font-size:7rem
-      }
- 
-      @include respond(phone) {
-        font-size:6rem
-      }
-    }
-
-    .heading-primary {
-      position: absolute;
-      text-align: center;
-      margin: 0;
-      padding: 0;
-      z-index: 10;
-      left: 50%;
-      bottom: 20%;
-      transform: translateX(-50%);
-      width:100%;
-    }
- }
-
  .heading-bg {
     padding-bottom:1rem;
     width:100%;
  }
 
- .paragraph, p {
-     font-size:1.9rem;
-     color:$primary-grey;
-     line-height: $line-height--big;
+ .paragraph {
+
+    &--center {
+      text-align:center;
+    }
+
+    &--white {
+      color:#fff;
+    }
  }

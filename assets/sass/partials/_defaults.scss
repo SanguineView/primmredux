@@ -49,11 +49,11 @@ a:hover {
 }
 
 p {
+	font-size:1.9rem;
+	color:$secondary-black;
+	line-height: 150%;
 	margin: 0 0 30px;
 	padding: 0;
-	color:$secondary-black;
-	line-height:150%;
-	font-size:2rem;
 }
 
 ol,
@@ -379,23 +379,19 @@ input[type="submit"] {
 	width: auto;
 	padding: 15px 30px;
 	border: 0;
-	color: $button--font-color;
-	background-color: $button--background-color;
-	font-size: $button--font-size;
-	font-weight: $font-weight--semibold;
+	color: #fff;
+	background-color: $primary-orange;
+	font-size: 1.65rem;
+	font-weight: 600;
 	white-space: normal;
 	text-decoration: none;
+	text-transform: uppercase;;
 	cursor: pointer;
 
 	&:focus,
 	&:hover {
-		color: $button--font-color-hover;
-		background-color: $button--background-color-hover;
-	}
-
-	.entry-content &:focus,
-	.entry-content &:hover {
-		color: $button--font-color-hover;
+		color:#fff;
+		background-color: $secondary-orange;
 	}
 }
 

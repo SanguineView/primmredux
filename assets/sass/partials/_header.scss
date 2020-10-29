@@ -11,11 +11,16 @@
 		display: flex;
 		align-items: center;
 		justify-content: space-between;
-		max-width:1280px;
+		max-width:144rem;
 		margin:0 auto;
 
 		@include respond(lt-lg) {
 			overflow:hidden;
+		}
+
+		@include respond(dt-sm) {
+			padding-right: 2rem;
+			padding-left: 2rem;
 		}
 
 		@include respond(tab) {
@@ -120,6 +125,7 @@
 
 .site-header {
 	padding: 1.5rem 3rem;
+	box-shadow:0 0 20px rgba(0, 0, 0, 0.05);
 
 	.wrap {
 		max-width:1280px;
