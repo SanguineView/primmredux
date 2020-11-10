@@ -973,18 +973,17 @@ font-weight:normal;
 
 .case-study-panel.lets-talk h3,
 .case-study-panel.testimonial p {
-color:#fff;
+        color:#fff;
 }
-
-.case-study-panel-collapse h3.deliverables {
-color: #fff;
-font-size: 1.6em;
+  
+.case-study-panel-collapse .panel h3 {
+    font-size:3em;
+    color:#fff;
+    font-weight:bold;
 }
-
-.case-study-panel-collapse h3 {
-color: #fff;
-font-size: 1.35em;
-margin-bottom:0;
+  
+.case-study-panel-collapse .panel h3 span {
+    font-weight:normal;
 }
 
 .case-study-panel-collapse p {
@@ -1388,6 +1387,12 @@ padding:0 25px;
 opacity: 1;
 max-height: 8500px;
 /* Whatever you like, as long as its more than the height of the content (on all screen sizes) */
+}
+
+.case-study-panel-collapse .panel .wrap {
+    margin:0 auto;
+    max-width:1280px;
+    display:block;
 }
 
 .case-study-panel-collapse .panel h2 {
