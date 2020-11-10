@@ -25,31 +25,31 @@ function prm_content_loop() {
     </div>
 
 
-    <section class="contentSection">
+    <section class="contentSection contentSection--digitalSearch">
         <div class="contentSection--wrap">
-            <div class="half__container">
+            <div class="half__container half__container--vStart">
                 <div class="half__container--left">
                     <h2 class="heading-primary"><span>SEARCH</span></h2>
                     <p>These are the ads that appear at the very top and extreme bottom of the Google search results page based on your search query. These text ads can also appear in Google Shopping or Maps when someone searches your keywords.</p>
                     <p>There are many ways to target desired users, this includes but is not limited to keywords (what people are looking for), time of day, device, age, income, geographic location and gender. In addition to targeting, on each individual ad there are a variety of extensions that we can use to convey relevant information before the user decides to click. These extensions include price, phone number, reviews, call-to-action text and direct links to certain pages on your website.</p>
                 </div>
                 <div class="half__container--right">
-                    <img src="<?php echo get_home_url(); ?>/wp-content/uploads/2018/09/phone-1.png" class="algincenter">
+                    <img src="<?php echo get_home_url(); ?>/wp-content/uploads/2018/09/phone-1.png" class="aligncenter">
                 </div>
             </div>
         </div>
     </section>
 
-    <section class="contentSection">
+    <section class="contentSection contentSection--digitalProductListing">
         <div class="contentSection--wrap">
             <div class="half__container">
                 <div class="half__container--left">
-                    <img src="<?php echo get_home_url(); ?>/wp-content/uploads/2018/09/phone-2.png" class="algincenter">
+                    <img src="<?php echo get_home_url(); ?>/wp-content/uploads/2018/09/phone-2.png" class="aligncenter">
                 </div>
-                <div class="half__container--right">
-                    <h2 class="heading-primary"><span>Product Listing Ads</span></h2>
-                    <p>Product Listing Ads or PLAs are primarily used for e-commerce sites and are an ad format that includes an image, title, description, price and your business’s name. When a user searches for a product on Google, you have the opportunity to showcase your items directly in the search results alongside other businesses that offer that same product.</p>
-                    <p>The beauty of product listing ads is that you are not charged unless the user clicks your ad and lands on your site where their product of interest is. Primm Advertising is very familiar with configuring 3rd party data feeds within Google’s merchant center then connecting it to Google Ads & Analytics for continual optimization and reporting.</p>
+                <div class="half__container--right half__container--vStart">
+                    <h2 class="heading-primary heading-primary--white"><span>Product Listing Ads</span></h2>
+                    <p class="paragraph--white">Product Listing Ads or PLAs are primarily used for e-commerce sites and are an ad format that includes an image, title, description, price and your business’s name. When a user searches for a product on Google, you have the opportunity to showcase your items directly in the search results alongside other businesses that offer that same product.</p>
+                    <p class="paragraph--white">The beauty of product listing ads is that you are not charged unless the user clicks your ad and lands on your site where their product of interest is. Primm Advertising is very familiar with configuring 3rd party data feeds within Google’s merchant center then connecting it to Google Ads & Analytics for continual optimization and reporting.</p>
                 </div>
             </div>
         </div>
@@ -64,17 +64,17 @@ function prm_content_loop() {
                     <p>One amazing feature the Display Network offers is remarketing. Remarketing shows ads to people who have visited your website before. When people leave your website without buying anything, remarketing helps you reconnect with them by showing relevant ads as they browse the web, as they use mobile apps, or as they search on Google.</p>
                 </div>
                 <div class="half__container--right">
-                    <img src="<?php echo get_home_url(); ?>/wp-content/uploads/2018/09/computer.png" class="algincenter">
+                    <img src="<?php echo get_home_url(); ?>/wp-content/uploads/2018/09/computer.png" class="aligncenter">
                 </div>
             </div>
         </div>
     </section>
 
-    <section class="contentSection contentSection--grey">
+    <section class="contentSection contentSection--digitalYoutube">
         <div class="contentSection--wrap">
             <div class="half__container">
                 <div class="half__container--left">
-                    <img src="<?php echo get_home_url(); ?>/wp-content/uploads/2018/10/youtube-pg.jpg" class="algincenter">
+                    <img src="<?php echo get_home_url(); ?>/wp-content/uploads/2018/10/youtube-pg.jpg" class="aligncenter">
                 </div>
                 <div class="half__container--right">
                     <h2 class="heading-primary"><span>Youtube</span></h2>
@@ -99,13 +99,13 @@ function prm_content_loop() {
                     <p>Gmail ads contextualize within Gmail’s interface both on mobile & desktop within the “Social” & “Promotions” tabs. This means that when users check their email (which happens many times per day) you have the capability to showcase beautiful full-screen display ads with text right above their emails! When it comes to branding, each touchpoint the user has with your business matters.</p>
                 </div>
                 <div class="half__container--right">
-                    <img src="<?php echo get_home_url(); ?>/wp-content/uploads/2018/09/monitor-1.png" class="algincenter">
+                    <img src="<?php echo get_home_url(); ?>/wp-content/uploads/2018/09/monitor-1.png" class="aligncenter">
                 </div>
             </div>
         </div>
     </section>
 
-    <div class="contentSection contentSection--blueGradient">
+    <div class="contentSection contentSection--blue">
         <div class="contentSection--wrap contentSection--flexColumn">
             <h2 class="heading-primary heading-primary--white">We're <span>Here To Help</span></h2>
             <p class="paragraph--white">We know that online advertising can be a daunting endeavor with so many options available, but our digital marketing team is well-equipped to walk you through the process and craft a campaign that satisfies key performance areas for your business.</p>

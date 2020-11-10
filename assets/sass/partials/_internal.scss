@@ -15,6 +15,10 @@
         }
     }
 
+    &--blue {
+        background:#0275b1
+    }
+
     &--blueGradient {
         background:linear-gradient(to right, rgba(46,174,227,1) 0%,rgba(2,117,177,1) 100%);
     }
@@ -39,6 +43,36 @@
         margin-top:-20rem;
         position: relative;
         z-index: 10;
+        padding-bottom:0;
+    }
+
+    &--digitalProductListing {
+        background: linear-gradient(to right, #2eaee3 0%, #0275b1 100%);
+        clip-path: polygon(0 0, 10% 0, 80% 10vh, 97% 0, 100% 0, 100% 80%, 0 80%);
+        padding-top: 13.5rem;
+        margin-top: -35rem;
+        margin-bottom: -15rem;
+    }
+
+    &--digitalYoutube {
+        background: #F6F9FC;
+        clip-path: polygon(0 10%, 50% 10%, 90% 0, 100% 0, 100% 100%, 0 100%);
+        padding-top:12.5rem;
+    }
+
+    &--digitalSearch {
+        position: relative;
+
+        &::before {
+            content: '';
+            height: 1px;
+            position: absolute;
+            top: 0;
+            left: 0;
+            display: block;
+            background: linear-gradient(to right, rgba(227,231,235,0.1) 0, rgba(227,231,235,0.6) 50%, rgba(227,231,235,0.1) 100%);
+            width: 100%;
+        }
     }
 }
 
@@ -70,5 +104,9 @@
         display: flex;
         flex-direction: column;
         justify-content: center;
+    }
+
+    &--vStart {
+        align-items:start;
     }
 }

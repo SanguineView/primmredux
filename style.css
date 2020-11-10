@@ -1871,6 +1871,16 @@ img.alignright,
 .paragraph--white {
   color: #fff; }
 
+.content ol,
+.content ul {
+  margin: 0 0 3rem 4rem;
+  padding: 0; }
+
+.content li {
+  list-style-type: disc;
+  font-size: 1.9rem;
+  line-height: 150%; }
+
 /* Site Header
 ---------------------------------------------- */
 .before-header {
@@ -3819,6 +3829,8 @@ img.alignright,
       .contentSection--wrap {
         padding-right: 2rem;
         padding-left: 2rem; } }
+  .contentSection--blue {
+    background: #0275b1; }
   .contentSection--blueGradient {
     background: linear-gradient(to right, #2eaee3 0%, #0275b1 100%); }
   .contentSection--grey {
@@ -3834,7 +3846,29 @@ img.alignright,
   .contentSection--aboveBefore {
     margin-top: -20rem;
     position: relative;
-    z-index: 10; }
+    z-index: 10;
+    padding-bottom: 0; }
+  .contentSection--digitalProductListing {
+    background: linear-gradient(to right, #2eaee3 0%, #0275b1 100%);
+    clip-path: polygon(0 0, 10% 0, 80% 10vh, 97% 0, 100% 0, 100% 80%, 0 80%);
+    padding-top: 13.5rem;
+    margin-top: -35rem;
+    margin-bottom: -15rem; }
+  .contentSection--digitalYoutube {
+    background: #F6F9FC;
+    clip-path: polygon(0 10%, 50% 10%, 90% 0, 100% 0, 100% 100%, 0 100%);
+    padding-top: 12.5rem; }
+  .contentSection--digitalSearch {
+    position: relative; }
+    .contentSection--digitalSearch::before {
+      content: '';
+      height: 1px;
+      position: absolute;
+      top: 0;
+      left: 0;
+      display: block;
+      background: linear-gradient(to right, rgba(227, 231, 235, 0.1) 0, rgba(227, 231, 235, 0.6) 50%, rgba(227, 231, 235, 0.1) 100%);
+      width: 100%; }
 
 .half__container {
   display: flex;
@@ -3855,6 +3889,8 @@ img.alignright,
     display: flex;
     flex-direction: column;
     justify-content: center; }
+  .half__container--vStart {
+    align-items: start; }
 
 /* SLIDER COMPARE */
 .twentytwenty-horizontal .twentytwenty-handle:before, .twentytwenty-horizontal .twentytwenty-handle:after, .twentytwenty-vertical .twentytwenty-handle:before, .twentytwenty-vertical .twentytwenty-handle:after {

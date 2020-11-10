@@ -101,3 +101,18 @@
       color:#fff;
     }
  }
+
+ .content {
+
+    ol,
+    ul {
+      margin: 0 0 3rem 4rem;
+      padding: 0;
+    }
+
+    li {
+      list-style-type:disc;
+      font-size:1.9rem;
+      line-height: 150%;
+    }
+ }
