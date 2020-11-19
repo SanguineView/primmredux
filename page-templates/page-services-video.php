@@ -21,8 +21,8 @@ function prm_content_loop() {
                     <img src="<?php echo get_home_url(); ?>/wp-content/uploads/2018/09/video-4.png" class="aligncenter">
                 </div>
                 <div class="half__container--right">
-                    <h2 class="heading-primary heading-primary--white">Video Production<br/><span>With A National Feel</span></h2>
-                    <p class="paragraph--white">We can give your video stunning visuals with a national feel thanks to years of patience, practice, and local know-how. Thanks to our state-of-the-art equipment, we are prepared for any situation and have the capability to give your video a national-quality production level with hometown flavor and spirit. Your customers will not only see your video campaign, they will remember it and mention it for years to come.</p>
+                    <h2 class="heading-primary text--white">Video Production<br/><span>With A National Feel</span></h2>
+                    <p class="text--white">We can give your video stunning visuals with a national feel thanks to years of patience, practice, and local know-how. Thanks to our state-of-the-art equipment, we are prepared for any situation and have the capability to give your video a national-quality production level with hometown flavor and spirit. Your customers will not only see your video campaign, they will remember it and mention it for years to come.</p>
                     <button class="button" href="/contact/" alt="Contact Primm Advertising">Get In Touch</button>
                 </div>
             </div>
@@ -69,13 +69,13 @@ function prm_content_loop() {
     <div class="jarallax video" data-speed="0" data-video-src="mp4:<?php echo get_home_url(); ?>/wp-content/themes/tpc/videos/primm-vid-bg-ex-1.mp4,webm:<?php echo get_home_url(); ?>/wp-content/themes/tpc/videos/primm-vid-bg-ex-1.webm">
     </div>
 
-    <div class="contentSection">
+    <section class="contentSection">
         <div class="contentSection--wrap contentSection--flexColumn">
             <h2 class="heading-primary"><span>A Title-Screen To</span><br/>End Credits Process</h2>
             <p>We know that online advertising can be a daunting endeavor with so many options available, but our digital marketing team is well-equipped to walk you through the process and craft a campaign that satisfies key performance areas for your business.</p>
             <a class="button center" href="https://theprimmcompany.com/our-work/">View More Work Examples</a>
         </div>
-    </div>
+    </section>
 
     <script type="text/javascript">
         jarallax(document.querySelectorAll('.jarallax'), {

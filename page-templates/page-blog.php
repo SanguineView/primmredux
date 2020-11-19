@@ -13,9 +13,8 @@ add_action( 'genesis_loop', 'wpb_custom_loop' );
 
 /** Custom  loop **/
 function wpb_custom_loop() {
-    echo '<section class="blog-feed">';
-        echo '<div class="wrap">';
-            include(locate_template('loop-blog-featured.php'));
+    echo '<section class="contentSection ">';
+        echo '<div class="contentSection--wrap1280">';
 
             include(locate_template('loop-blog.php'));
         echo '</div>';

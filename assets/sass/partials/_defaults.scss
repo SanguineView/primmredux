@@ -252,18 +252,18 @@ figure {
 input,
 select,
 textarea {
+	background-color: #fff;
+	border: 1px solid #DDE7EF;
+	color: #2f3d50;
 	width: 100%;
 	padding: 15px;
-	border: 1px solid #ddd;
-	color: $forms--font-color;
-	background-color: $forms__background-color;
-	font-size: $forms--font-size;
-	font-weight: $font-weight--regular;
+	font-size: 1.75rem;
+	font-weight: 400;
 }
 
 input:focus,
 textarea:focus {
-	border: 1px solid #999;
+	border: 1px solid #2eaee3;
 	outline: none;
 }
 

@@ -21,10 +21,10 @@ function prm_content_loop() {
                     <img src="<?php echo get_home_url(); ?>/wp-content/uploads/2018/09/mag.png" class="algincenter">
                 </div>
                 <div class="half__container--right">
-                    <h2  class="heading-primary heading-primary--white">PRINT MEDIA IS OUR<br/><span>FIRST LOVE</span></h2>
-                    <p class="paragraph--white">Print is where it all started for Primm Advertising. We opened our doors over 40 years ago, and we’ve been creating high-quality print ads ever since. Even before Primm Advertising existed, our founder, Ron Primm, began his career as a popular illustrator for the Virginian-Pilot newspaper. Trust us. We’re really good at this.</p>
-                    <p class="paragraph--white">At Primm Advertising, we get to know you, your company, your market, your corporate “personality,” and consumer benefits before we formulate creative concepts. There’s not a “Primm style” as a result – what we do is a direct reflection of who you are.</p>
-                    <p class="paragraph--white">Our designs are built from the ground up with your product, brand, and customer in mind. With striking visual elements, compelling copy points, and well-researched placements we know that we can leave your customer with a lasting impression of your company because we’ve done it time and time again for years.</p>
+                    <h2  class="heading-primary text--white">PRINT MEDIA IS OUR<br/><span>FIRST LOVE</span></h2>
+                    <p class="text--white">Print is where it all started for Primm Advertising. We opened our doors over 40 years ago, and we’ve been creating high-quality print ads ever since. Even before Primm Advertising existed, our founder, Ron Primm, began his career as a popular illustrator for the Virginian-Pilot newspaper. Trust us. We’re really good at this.</p>
+                    <p class="text--white">At Primm Advertising, we get to know you, your company, your market, your corporate “personality,” and consumer benefits before we formulate creative concepts. There’s not a “Primm style” as a result – what we do is a direct reflection of who you are.</p>
+                    <p class="text--white">Our designs are built from the ground up with your product, brand, and customer in mind. With striking visual elements, compelling copy points, and well-researched placements we know that we can leave your customer with a lasting impression of your company because we’ve done it time and time again for years.</p>
                     <button class="button" href="/contact/" alt="Contact Primm Advertising">Get In Touch</button>
                 </div>
             </div>

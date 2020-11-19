@@ -12,6 +12,15 @@
           url('assets/fonts/Ambarella.ttf')  format('truetype'), 
           url('assets/fonts/Ambarella.svg#Ambarella') format('svg');
  }
+
+ .number {
+
+    &--lrg {
+      font-size:6rem;
+      font-weight:bold;
+      margin-bottom:15px;
+    }
+ }
  
  .heading-primary {
       color:$primary-blue;
@@ -36,30 +45,24 @@
       @include respond(phone) {
         font-size:2.15rem
       }
-
-      &--center {
-        text-align:center;
-      }
-
-      &--white {
-        color:#fff;
-      }
  }
  
  .heading-secondary {
-     font-size:4.5rem;
+     font-size:3.5rem;
+     margin-top:0;
+     font-weight:bold;
 
      @include respond(lt) {
-       font-size:3rem;
+       font-size:2.5rem;
      }
 
      @include respond(phone) {
-       font-size:2.5rem
+       font-size:2.25rem
      }
  }
  
  .heading-third {
-     font-size:2.6rem;
+     font-size:2.75rem;
 
      @include respond(lt) {
        font-size:2rem;
@@ -92,14 +95,6 @@
  }
 
  .paragraph {
-
-    &--center {
-      text-align:center;
-    }
-
-    &--white {
-      color:#fff;
-    }
  }
 
  .content {
@@ -108,6 +103,25 @@
     ul {
       margin: 0 0 3rem 4rem;
       padding: 0;
+
+      &.orange {
+        
+        li {
+          list-style: none;
+          margin-bottom:15px;
+          font-size: 3em;
+          color:#0275b1;
+        
+          &::before {
+            content: "\2022";
+            color: #f9a332;
+            font-weight: bold;
+            display: inline-block;
+            width: 1em;
+            margin-left: -1em;
+          }
+        }
+      }
     }
 
     li {
@@ -116,3 +130,27 @@
       line-height: 150%;
     }
  }
+
+ .text {
+ 
+  &--center {
+    text-align:center;
+  }
+
+  &--white {
+    color:#fff;
+  }
+
+  &--blue {
+    color:#1277af;
+  }
+
+  &--underline {
+    border-bottom:2px solid #000;
+  }
+
+  &--underlineBlue {
+   border-bottom:2px solid #1277af;
+   margin-bottom:1.5rem;
+  }
+}

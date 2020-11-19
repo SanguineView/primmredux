@@ -4,7 +4,7 @@ $sticky = get_option('sticky_posts');
 $paged = ( get_query_var('paged') ) ? get_query_var('paged') : 1;
 $args = array(
     'post__not_in'          => $sticky,
-    'posts_per_page'    => 3,
+    'posts_per_page'    => 8,
     'paged' => $paged
 );
 
@@ -20,16 +20,11 @@ if ( $sjPost->have_posts() ) :
 
             ?>
 
-                <figure class="it-hover-blog">
-                    <?php if ( has_post_thumbnail() ) {
-                            the_post_thumbnail('blog-cropped', array('class' => 'blog-cropped' ));
-                        } ?>
-                    <figcaption>
-                        <h3><?php echo the_title(); ?></h3>
-                        <p class="dummy-link">Read Full Post</p>
-                    </figcaption>
-                    <a href="<?php the_permalink(); ?>"></a>
-                </figure>
+                <?php if ( has_post_thumbnail() ) {
+                        the_post_thumbnail('blog-cropped', array('class' => 'blog-cropped' ));
+                    } ?>
+                <h2 class="heading-third"><?php echo the_title(); ?></h2>
+                <a href="<?php the_permalink(); ?>" class="button">Read Full Post</a>
 
                 <?php
 

@@ -19,3 +19,42 @@
         position: absolute;
     }
 }
+
+.video-container {
+    position: relative;
+    top: 0;
+    left: 0;
+    height: 100%;
+    width: 100%;
+    overflow: hidden;
+    background: #fff;
+    padding:20rem 0;
+
+    .filter {
+        z-index: 100;
+        position: absolute;
+        background: rgba(0, 0, 0, 0.4);
+        width: 100%;
+    }
+
+    video {
+        position: absolute;
+        top: 0;
+        bottom: 0;
+        left: 0;
+        right: 0;
+        margin: auto;
+        min-height: 50%;
+        min-width: 50%;
+
+        &.fillWidth {
+            width: 100%;
+          }
+    }
+}
+
+.video-container .poster img {
+    width: 100%;
+    bottom: 0;
+    position: absolute;
+}

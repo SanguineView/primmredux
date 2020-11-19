@@ -15,8 +15,8 @@ function prm_content_loop() {
     ?>
     <div class="contentSection contentSection--blueGradient contentSection--clipAngle">
         <div class="contentSection--wrap contentSection--flexColumn">
-            <h2 class="heading-primary heading-primary--center heading-primary--white">An Online Advertising <span>AGENCY</span></h2>
-            <p class="paragraph--white">Not sure which Google Ads options are right for your business? We can help. As a Google Partner Agency, we’re experts in using Google Ads to drive customers to your business. We can do this through several campaign types commonly referred to as Search, Display, and YouTube. In addition to traditional Google Advertising, Programmatic advertising is also one of our capabilities in regards to display ads.</p>
+            <h2 class="heading-primary text--center text--white">An Online Advertising <span>AGENCY</span></h2>
+            <p class="text--white">Not sure which Google Ads options are right for your business? We can help. As a Google Partner Agency, we’re experts in using Google Ads to drive customers to your business. We can do this through several campaign types commonly referred to as Search, Display, and YouTube. In addition to traditional Google Advertising, Programmatic advertising is also one of our capabilities in regards to display ads.</p>
             <button class="button" href="/contact/" alt="Contact Primm Advertising">Get In Touch</button>
         </div>
     </div>
@@ -47,9 +47,9 @@ function prm_content_loop() {
                     <img src="<?php echo get_home_url(); ?>/wp-content/uploads/2018/09/phone-2.png" class="aligncenter">
                 </div>
                 <div class="half__container--right half__container--vStart">
-                    <h2 class="heading-primary heading-primary--white"><span>Product Listing Ads</span></h2>
-                    <p class="paragraph--white">Product Listing Ads or PLAs are primarily used for e-commerce sites and are an ad format that includes an image, title, description, price and your business’s name. When a user searches for a product on Google, you have the opportunity to showcase your items directly in the search results alongside other businesses that offer that same product.</p>
-                    <p class="paragraph--white">The beauty of product listing ads is that you are not charged unless the user clicks your ad and lands on your site where their product of interest is. Primm Advertising is very familiar with configuring 3rd party data feeds within Google’s merchant center then connecting it to Google Ads & Analytics for continual optimization and reporting.</p>
+                    <h2 class="heading-primary text--white"><span>Product Listing Ads</span></h2>
+                    <p class="text--white">Product Listing Ads or PLAs are primarily used for e-commerce sites and are an ad format that includes an image, title, description, price and your business’s name. When a user searches for a product on Google, you have the opportunity to showcase your items directly in the search results alongside other businesses that offer that same product.</p>
+                    <p class="text--white">The beauty of product listing ads is that you are not charged unless the user clicks your ad and lands on your site where their product of interest is. Primm Advertising is very familiar with configuring 3rd party data feeds within Google’s merchant center then connecting it to Google Ads & Analytics for continual optimization and reporting.</p>
                 </div>
             </div>
         </div>
@@ -107,8 +107,8 @@ function prm_content_loop() {
 
     <div class="contentSection contentSection--blue">
         <div class="contentSection--wrap contentSection--flexColumn">
-            <h2 class="heading-primary heading-primary--white">We're <span>Here To Help</span></h2>
-            <p class="paragraph--white">We know that online advertising can be a daunting endeavor with so many options available, but our digital marketing team is well-equipped to walk you through the process and craft a campaign that satisfies key performance areas for your business.</p>
+            <h2 class="heading-primary text--white">We're <span>Here To Help</span></h2>
+            <p class="text--white">We know that online advertising can be a daunting endeavor with so many options available, but our digital marketing team is well-equipped to walk you through the process and craft a campaign that satisfies key performance areas for your business.</p>
         </div>
     </div>
 

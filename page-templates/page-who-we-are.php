@@ -14,8 +14,8 @@ function prm_content_loop() {
 
     ?>
     <div class="contentSection">
-        <div class="contentSection--wrap  contentSection--flexColumn">
-            <h2 class="heading-primary heading-primary--center">Who we <span>Are</span></h2>
+        <div class="contentSection--wrap contentSection--flexColumn">
+            <h2 class="heading-primary text--center">Who we <span>Are</span></h2>
             <p>Primm Advertising is an award-winning, full-service marketing and advertising agency supporting Virginia area businesses for over 40 years. Our solutions include video production, search engine optimization, social media management, brand strategy, media planning, and website design.</p>
             <button class="button" href="/contact/" alt="Contact Primm Advertising">Get In Touch</button>
         </div>
@@ -29,8 +29,8 @@ function prm_content_loop() {
                     </div>
                 </div>
                 <div class="half__container--right">
-                    <h2 class="heading-primary heading-primary--white"><span>More</span> Than the Sum of Our Parts</h2>
-                    <p class="paragraph--white">We offer a one-phone-call solution to any business with challenges and budgets big and small. Let us walk with you to craft a plan, a campaign or a project that will take you to the next level. You can handle your entire advertising strategy with Primm and be assured that your campaign is executed in a creative, consistent manner, with one voice and one vision. </p>
+                    <h2 class="heading-primary text--white"><span>More</span> Than the Sum of Our Parts</h2>
+                    <p class="text--white">We offer a one-phone-call solution to any business with challenges and budgets big and small. Let us walk with you to craft a plan, a campaign or a project that will take you to the next level. You can handle your entire advertising strategy with Primm and be assured that your campaign is executed in a creative, consistent manner, with one voice and one vision. </p>
                     <a class="button" href="/contact/" alt="Contact Primm Advertising">Let's Get Started</a>
                 </div>
             </div>
