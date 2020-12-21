@@ -98,7 +98,6 @@
 			position: absolute;
 			width: 180px;
 			padding-left: 0;
-			border-top: $border-width $border-style $border-color;
 			opacity: 0;
 			transition: opacity 0.4s ease-in-out;
 		}
@@ -107,14 +106,14 @@
 			position: relative;
 			width: 100%;
 			background-color: $genesis-nav-menu__sub-menu__link--background-color;
-			font-size: $genesis-nav-menu__sub-menu__link--font-size;
 			word-wrap: break-word;
 
 			@media only screen and (min-width: $standard-screen-width) {
 				width: 180px;
 				padding-top: 15px;
 				padding-bottom: 15px;
-				border: $border-width $border-style $border-color;
+				border: 1px solid #eee;
+				font-size: 1.5rem;
 				border-top: 0;
 			}
 		}
@@ -180,7 +179,7 @@
 				position: absolute;
 				width: 180px;
 				padding-left: 0;
-				border-top: $border-width $border-style $border-color;
+				border-top: 1px solid #eee;
 				opacity: 0;
 				transition: opacity 0.4s ease-in-out;
 			}
@@ -574,6 +573,14 @@ transform: translateY(0);
 
 		&:hover {
 			background-color:$secondary-orange;
+		}
+	}
+
+	.sub-menu {
+		border-color:#eee;
+
+		a {
+			font-size:1.5rem;
 		}
 	}
 }

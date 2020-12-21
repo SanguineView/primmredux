@@ -69,23 +69,23 @@
     }
 
     &__container {
-        display: flex;
+        display: grid;
+        grid-template-rows: 1fr;
+        grid-template-columns: repeat(6, 1fr);
         align-items: center;
-        justify-content: space-between;
-        flex-wrap: wrap;
-    }
 
-    &__item {
-        margin:20px 1%;
-        width:20%;
-
-        @include respond(lt-lg) {
-            width:30%;
+        @include respond(lt) {
+            grid-template-columns: repeat(3,1fr);
+            grid-template-rows: repeat(2, 1fr);
         }
 
         @include respond(phone) {
-            width:47%;
+            grid-template-columns: repeat(2,1fr);
+            grid-template-rows: repeat(3, 1fr);
         }
+    }
+
+    &__item {
 
         img {
             display: block;

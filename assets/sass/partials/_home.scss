@@ -969,6 +969,14 @@ font-weight:normal;
     span {
         font-weight:bold;
     }
+
+    @include respond(tab) {
+        font-size:2em;
+    }
+
+    @include respond(phone) {
+        font-size:1.75em;
+    }
 }
 
 .case-study-panel.lets-talk h3,
@@ -980,6 +988,14 @@ font-weight:normal;
     font-size:3em;
     color:#fff;
     font-weight:bold;
+
+    @include respond(tab) {
+        font-size:2em;
+    }
+
+    @include respond(phone) {
+        font-size:1.75em;
+    }
 }
   
 .case-study-panel-collapse .panel h3 span {
@@ -1082,6 +1098,13 @@ background:#f9f9f9;
 color:#000;
 text-align:center;
 padding:10px 20px;
+
+    svg {
+
+        @include respond(phone) {
+            width:50%;
+        }
+    }
 }
   
 .case-study-serv-table-body h3 {
@@ -1102,6 +1125,14 @@ color:#fff;
 font-weight:900;
 font-size:4em;
 margin:0;
+
+@include respond(tab) {
+    font-size:3em;
+}
+
+@include respond(phone) {
+    font-size:2.5em;
+}
 }
 
 .case-study-info-box p {
@@ -1327,6 +1358,14 @@ color:#fff;
 text-transform: uppercase;
 font-weight:bolder;
 margin:0;
+
+    @include respond(tab) {
+        font-size:3em;
+    }
+
+    @include respond(phone) {
+        font-size:2.5em;
+    }
 }
 
 .case-study-panel-collapse .head p {
@@ -1381,6 +1420,11 @@ transition: 0.4s ease-in-out;
 opacity: 0;
 margin:0;
 padding:0 25px;
+
+    @include respond(tab) {
+        padding:0 4.5rem;
+    }
+
 }
 
 .case-study-panel-collapse .panel.show {

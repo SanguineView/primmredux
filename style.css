@@ -2169,21 +2169,20 @@ span[data-jarallax-element] {
         position: absolute;
         width: 180px;
         padding-left: 0;
-        border-top: 1px solid #333;
         opacity: 0;
         transition: opacity 0.4s ease-in-out; } }
     .genesis-nav-menu .sub-menu a {
       position: relative;
       width: 100%;
       background-color: #fff;
-      font-size: 1rem;
       word-wrap: break-word; }
       @media only screen and (min-width: 960px) {
         .genesis-nav-menu .sub-menu a {
           width: 180px;
           padding-top: 15px;
           padding-bottom: 15px;
-          border: 1px solid #333;
+          border: 1px solid #eee;
+          font-size: 1.5rem;
           border-top: 0; } }
     @media only screen and (min-width: 960px) {
       .genesis-nav-menu .sub-menu .sub-menu {
@@ -2226,7 +2225,7 @@ span[data-jarallax-element] {
         position: absolute;
         width: 180px;
         padding-left: 0;
-        border-top: 1px solid #333;
+        border-top: 1px solid #eee;
         opacity: 0;
         transition: opacity 0.4s ease-in-out; } }
 
@@ -2520,6 +2519,10 @@ span[data-jarallax-element] {
     color: #fff !important; }
     .nav-primary .nav-action a:hover {
       background-color: #ffba60; }
+  .nav-primary .sub-menu {
+    border-color: #eee; }
+    .nav-primary .sub-menu a {
+      font-size: 1.5rem; }
 
 /* Footer Menu
 --------------------------------------------- */
@@ -3565,6 +3568,12 @@ span[data-jarallax-element] {
   font-weight: normal; }
   .case-study-panel h3 span {
     font-weight: bold; }
+  @media only screen and (max-width: 56.25em) {
+    .case-study-panel h3 {
+      font-size: 2em; } }
+  @media only screen and (max-width: 47.5em) {
+    .case-study-panel h3 {
+      font-size: 1.75em; } }
 
 .case-study-panel.lets-talk h3,
 .case-study-panel.testimonial p {
@@ -3574,6 +3583,12 @@ span[data-jarallax-element] {
   font-size: 3em;
   color: #fff;
   font-weight: bold; }
+  @media only screen and (max-width: 56.25em) {
+    .case-study-panel-collapse .panel h3 {
+      font-size: 2em; } }
+  @media only screen and (max-width: 47.5em) {
+    .case-study-panel-collapse .panel h3 {
+      font-size: 1.75em; } }
 
 .case-study-panel-collapse .panel h3 span {
   font-weight: normal; }
@@ -3659,6 +3674,9 @@ span[data-jarallax-element] {
   color: #000;
   text-align: center;
   padding: 10px 20px; }
+  @media only screen and (max-width: 47.5em) {
+    .case-study-serv-table-body svg {
+      width: 50%; } }
 
 .case-study-serv-table-body h3 {
   margin: 0 0 25px;
@@ -3676,6 +3694,12 @@ span[data-jarallax-element] {
   font-weight: 900;
   font-size: 4em;
   margin: 0; }
+  @media only screen and (max-width: 56.25em) {
+    .case-study-info-box h3 {
+      font-size: 3em; } }
+  @media only screen and (max-width: 47.5em) {
+    .case-study-info-box h3 {
+      font-size: 2.5em; } }
 
 .case-study-info-box p {
   color: #fff;
@@ -3850,6 +3874,12 @@ span[data-jarallax-element] {
   text-transform: uppercase;
   font-weight: bolder;
   margin: 0; }
+  @media only screen and (max-width: 56.25em) {
+    .case-study-panel-collapse .head h3 {
+      font-size: 3em; } }
+  @media only screen and (max-width: 47.5em) {
+    .case-study-panel-collapse .head h3 {
+      font-size: 2.5em; } }
 
 .case-study-panel-collapse .head p {
   font-size: 1em;
@@ -3897,6 +3927,9 @@ span[data-jarallax-element] {
   opacity: 0;
   margin: 0;
   padding: 0 25px; }
+  @media only screen and (max-width: 56.25em) {
+    .case-study-panel-collapse .panel {
+      padding: 0 4.5rem; } }
 
 .case-study-panel-collapse .panel.show {
   opacity: 1;
@@ -4536,23 +4569,22 @@ span[data-jarallax-element] {
     max-width: 1280px;
     margin: 0 auto; }
   .partners__container {
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
-    flex-wrap: wrap; }
-  .partners__item {
-    margin: 20px 1%;
-    width: 20%; }
-    @media only screen and (max-width: 80em) {
-      .partners__item {
-        width: 30%; } }
+    display: grid;
+    grid-template-rows: 1fr;
+    grid-template-columns: repeat(6, 1fr);
+    align-items: center; }
+    @media only screen and (max-width: 66.25em) {
+      .partners__container {
+        grid-template-columns: repeat(3, 1fr);
+        grid-template-rows: repeat(2, 1fr); } }
     @media only screen and (max-width: 47.5em) {
-      .partners__item {
-        width: 47%; } }
-    .partners__item img {
-      display: block;
-      margin: 10px auto;
-      width: 75%; }
+      .partners__container {
+        grid-template-columns: repeat(2, 1fr);
+        grid-template-rows: repeat(3, 1fr); } }
+  .partners__item img {
+    display: block;
+    margin: 10px auto;
+    width: 75%; }
 
 /* Print Styles
 --------------------------------------------------- */
