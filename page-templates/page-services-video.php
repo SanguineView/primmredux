@@ -72,7 +72,7 @@ function prm_content_loop() {
     <section class="contentSection">
         <div class="contentSection--wrap contentSection--flexColumn">
             <h2 class="heading-primary"><span>A Title-Screen To</span><br/>End Credits Process</h2>
-            <p>We know that online advertising can be a daunting endeavor with so many options available, but our digital marketing team is well-equipped to walk you through the process and craft a campaign that satisfies key performance areas for your business.</p>
+            <p class="text--center">We know that online advertising can be a daunting endeavor with so many options available, but our digital marketing team is well-equipped to walk you through the process and craft a campaign that satisfies key performance areas for your business.</p>
             <a class="button center" href="https://theprimmcompany.com/our-work/">View More Work Examples</a>
         </div>
     </section>

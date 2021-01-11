@@ -27,25 +27,25 @@ function prm_content_loop() {
     <section class="contentSection contentSection--greyAngle">
         <div class="contentSection--wrap">
             <div class="web-ex-container">
-                <div class="web-ex-block" data-aos="fade-up" data-aos-delay="150">
+                <div class="web-ex-block" data-aos-delay="150">
                 <a href="https://pariserderm.com/"><img src="<?php echo get_home_url(); ?>/wp-content/uploads/2018/11/Pariser-MockUp.jpg" class="aligncenter"></a>
                 </div>
-                <div class="web-ex-block" data-aos="fade-up" data-aos-delay="300">
+                <div class="web-ex-block" data-aos-delay="300">
                 <a href="https://edmarc.org/"><img src="<?php echo get_home_url(); ?>/wp-content/uploads/2018/11/Edmarc-Mock-Up.jpg" class="aligncenter"></a>
                 </div>
-                <div class="web-ex-block" data-aos="fade-up" data-aos-delay="450">
+                <div class="web-ex-block" data-aos-delay="450">
                 <a href="https://petedecker.com/"><img src="<?php echo get_home_url(); ?>/wp-content/uploads/2018/11/Decker-MockUp.jpg" class="aligncenter"></a>
                 </div>
-                <div class="web-ex-block" data-aos="fade-up" data-aos-delay="150">
+                <div class="web-ex-block" data-aos-delay="150">
                 <a href="http://comfortsystemsva.com/"><img src="<?php echo get_home_url(); ?>/wp-content/uploads/2018/11/ComfortSystems-MockUp.jpg" class="aligncenter"></a>
                 </div>
-                <div class="web-ex-block" data-aos="fade-up" data-aos-delay="300">
+                <div class="web-ex-block" data-aos-delay="300">
                 <a href="http://baydiesel.com/"><img src="<?php echo get_home_url(); ?>/wp-content/uploads/2018/11/Bay-Diesel-Mock-Up.jpg" class="aligncenter"></a>
                 </div>
-                <div class="web-ex-block" data-aos="fade-up" data-aos-delay="450">
+                <div class="web-ex-block" data-aos-delay="450">
                 <a href="http://greenlawn-memorial.com/"><img src="<?php echo get_home_url(); ?>/wp-content/uploads/2018/11/greenlawn-web.jpg" class="aligncenter"></a>
                 </div>
-                <a class="button aos-init aos-animate" data-aos="fade-up" data-aos-delay="450" href="https://theprimmcompany.com/our-work/">View More Work Examples</a>
+                <a class="button aos-init aos-animate" data-aos-delay="450" href="https://theprimmcompany.com/our-work/">View More Work Examples</a>
             </div>
         </div>  
     </section>
@@ -92,7 +92,7 @@ function prm_content_loop() {
 
     <section class="contentSection">
         <div class="contentSection--wrap">
-            <h2 class="heading-primary text--center" data-aos="fade-up">You're Only<br/><span>3</span> Steps Away</h2>
+            <h2 class="heading-primary text--center">You're Only<br/><span>3</span> Steps Away</h2>
             <div class="third__container">
                 <div class="third__block">
                     <h3 class="number--lrg text--center text--blue text--underlineBlue">1</h3>

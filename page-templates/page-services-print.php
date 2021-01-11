@@ -34,7 +34,7 @@ function prm_content_loop() {
     <div class="contentSection">
         <div class="contentSection--wrap contentSection--flexColumn">
             <h2 class="heading-primary"><span>A DIFFERENCE YOU CAN</span><br/>SEE AND FEEL</h2>
-            <p>We know that online advertising can be a daunting endeavor with so many options available, but our digital marketing team is well-equipped to walk you through the process and craft a campaign that satisfies key performance areas for your business.</p>
+            <p class="text--center">We know that online advertising can be a daunting endeavor with so many options available, but our digital marketing team is well-equipped to walk you through the process and craft a campaign that satisfies key performance areas for your business.</p>
         </div>
     </div>
 
@@ -68,7 +68,7 @@ function prm_content_loop() {
     <div class="contentSection">
         <div class="contentSection--wrap contentSection--flexColumn">
             <h2 class="heading-primary"><span>CONSISTENCY</span> IS KEY</h2>
-            <p>Through our themes in both content and design, we convey a consistent message in your print ads, making you recognizable and familiar to your audience. But we don’t stop there, when you work with Primm Advertising you have the luxury of keeping all marketing materials in one place. The team that handles your print advertising will work with the digital, video production, and web development team to ensure that your business presents a consistent and compelling look wherever you encounter your customer.</p>
+            <p class="text--center">Through our themes in both content and design, we convey a consistent message in your print ads, making you recognizable and familiar to your audience. But we don’t stop there, when you work with Primm Advertising you have the luxury of keeping all marketing materials in one place. The team that handles your print advertising will work with the digital, video production, and web development team to ensure that your business presents a consistent and compelling look wherever you encounter your customer.</p>
         </div>
     </div>
 

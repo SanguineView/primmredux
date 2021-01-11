@@ -94,12 +94,33 @@
         padding-top: 13.5rem;
         margin-top: -35rem;
         margin-bottom: -15rem;
+
+        @include respond(tab) {
+            clip-path: none;
+            margin-top: -25rem;
+            z-index: 100;
+            position: relative;
+            margin-bottom: 0;
+        }
+
+        @include respond(phone) {
+            margin-top: -15rem;
+        }
     }
 
     &--digitalYoutube {
         background: #F6F9FC;
         clip-path: polygon(0 10%, 50% 10%, 90% 0, 100% 0, 100% 100%, 0 100%);
         padding-top:12.5rem;
+
+        @include respond(tab) {
+            clip-path: none;
+            padding-top:10.5rem;
+        }
+
+        @include respond(phone) {
+            padding-top:5rem;
+        }
     }
 
     &--digitalSearch {
@@ -124,6 +145,10 @@
     &--videoFeel {
         background: linear-gradient(to right, #2eaee3 0%, #0275b1 100%);
         clip-path: polygon(0 0, 100% 0, 100% 100%, 50% 100%, 0 90%);
+
+        @include respond(tab) {
+            clip-path: none;
+        }
     }
 
     &--webBanner {
@@ -260,12 +285,15 @@
 
 .work-display-filter {
     text-align:center;
+    margin-bottom:3.5rem;
     
     a {
         text-transform:uppercase;
-        font-size: 0.9em;
+        font-size: 1.8rem;
         margin-right: 15px;
         transition: all 0.3s ease;
+        color:$primary-blue;
+        text-decoration:none;
 
         &:last-child {
             margin-right: 0;
@@ -310,12 +338,13 @@
 
                 &.link {
                     color: #fff;
-                    font-size: 0.75em;
+                    font-size: 1.4rem;
                     font-weight: 500;
                     text-align: center;
                     position: absolute;
                     bottom: 10px;
                     right: 10px;
+                    text-shadow: 1px 1px 1px rgba(#000, 0.2);
                 }
             }
             
@@ -362,9 +391,18 @@
     justify-content: center;
     align-items:center;
 
+    @include respond(tab) {
+        flex-direction:column;
+    }
+
     &--left {
         width: 50%;
         padding: 0 6.5rem;
+
+        @include respond(tab) {
+            width: 100%;
+            padding: 0 2.5rem;
+        }
 
         .button {
             text-align:center;
@@ -374,6 +412,11 @@
     &--right {
         width: 50%;
         padding: 0 6.5rem;
+
+        @include respond(tab) {
+            width: 100%;
+            padding: 0 2.5rem;
+        }
 
         .button {
             text-align:center;
